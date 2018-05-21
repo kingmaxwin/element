@@ -1,5 +1,28 @@
 ## Changelog
 
+### 2.3.9
+
+*2018-05-18*
+
+- Fixed when the source data does not have the field specified by a TableColumn's `prop` attribute, an error would occur when the mouse moves into that column's cells, #11137
+- The `lockScroll` attribute of pop up components no longer adds an inline style to the parent element, but instead adds a class name, #11114
+- Fixed the icon of Progress not displaying when its `status` is exception, #11172
+- Fixed options' `disabled` attribute not working in filterable Cascader's filter result list, #11185
+- Fixed an issue where Table's expanded row cannot be collapsed if the data source is updated after its expansion, #11186
+- `setCurrentKey` of Tree now accepts `null` as its param to cancel the currently highlighted node, #11205
+
+### 2.3.8
+
+*2018-05-11*
+
+- Corregido que el panel DatePicker saltaba al mes actual después de escoger una fecha en un mes diferente cuando el tipo era `dates`, #10973
+- Arreglado que el `clearable Input` seguía mostrando el icono de borrado cuando era sólo de lectura, #10912
+- Arreglado que al cerrar el panel DatePicker sin modificar el valor se desencadenaba incorrectamente el evento `change`, #11017
+- Arreglado que la navegación por el teclado no funcionaba correctamente cuando Select tenia opciones agrupadas, #11058
+- Agregado el `slot named` `prefix` para Select, #11063
+- Agregado  el metodo `clearValidate` para FormItem, #11076
+- Agregado el atributo `checkOnClickNode` para Tree, #11111
+
 ### 2.3.7
 
 *2018-04-29*
